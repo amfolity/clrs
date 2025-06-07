@@ -912,3 +912,4 @@ def _position_encoding(sentence_size: int, embedding_size: int) -> np.ndarray:
       encoding[i - 1, j - 1] = (i - (le - 1) / 2) * (j - (ls - 1) / 2)
   encoding = 1 + 4 * encoding / embedding_size / sentence_size
   return np.transpose(encoding)
+
